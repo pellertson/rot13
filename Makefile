@@ -11,3 +11,6 @@ clean:
 
 test: $(EXE)
 	echo "abcnopABCNOP123 .la" | ./$(EXE)
+
+install: $(EXE)
+	cp $^ /usr/local/bin
