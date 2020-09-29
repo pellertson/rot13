@@ -7,14 +7,7 @@ using namespace std;
 char rot13(char in, char base)
 {
 	int diff = in - base;
-	char result;
-
-	if (diff < 13)
-		result = in + 13;
-	else
-		result = in - 13;
-
-	return result;
+	return diff < 13 ? in + 13 : in - 13;
 }
 
 int main()

@@ -9,5 +9,5 @@ $(EXE): $(SOURCES)
 clean:
 	rm $(EXE)
 
-test:
+test: $(EXE)
 	echo "abcnopABCNOP123 .la" | ./$(EXE)
